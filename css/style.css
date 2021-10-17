@@ -53,6 +53,22 @@ body {
     --foodcafe_navbar_text_white_color: rgb(255, 255, 255);
 }
 
+.padding-top-zero {
+    padding-top: 0;
+}
+
+.padding-bottom-zero {
+    padding-bottom: 0;
+}
+
+.padding-right-zero {
+    padding-right: 0;
+}
+
+.padding-left-zero {
+    padding-left: 0;
+}
+
 
 /*2. Preloader CSS*/
 
@@ -458,39 +474,43 @@ a.btn-table:hover {
 }
 
 .menu-nav ul li.breakfast a {
-    background-image: url(../images/icon-1.png);
+    background-image: url(../images/menu-item/icon-1.png);
 }
 
 .menu-nav ul li.lunch a {
-    background-image: url(../images/icon-2.png);
+    background-image: url(../images/menu-item/icon-2.png);
 }
 
 .menu-nav ul li.dinner a {
-    background-image: url(../images/icon-3.png);
+    background-image: url(../images/menu-item/icon-3.png);
 }
 
 .menu-nav ul li.main-dish a {
-    background-image: url(../images/icon-4.png);
+    background-image: url(../images/menu-item/icon-4.png);
+}
+
+.active_menu_item {
+    background-image: url(../images/menu-item/icon-1-hover.png);
 }
 
 .menu-nav ul li.breakfast a:hover,
 .menu-nav ul li.active.breakfast a {
-    background-image: url(../img/menu-icon/icon-1-hover.png);
+    background-image: url(../images/menu-item/icon-1-hover.png);
 }
 
 .menu-nav ul li.lunch a:hover,
 .menu-nav ul li.active.lunch a {
-    background-image: url(../img/menu-icon/icon-2-hover.png);
+    background-image: url(../images/menu-item/icon-2-hover.png);
 }
 
 .menu-nav ul li.dinner a:hover,
 .menu-nav ul li.active.dinner a {
-    background-image: url(../img/menu-icon/icon-3-hover.png);
+    background-image: url(../images/menu-item/icon-3-hover.png);
 }
 
 .menu-nav ul li.main-dish a:hover,
 .menu-nav ul li.active.main-dish a {
-    background-image: url(../img/menu-icon/icon-4-hover.png);
+    background-image: url(../images/menu-item/icon-4-hover.png);
 }
 
 .menu-list {
@@ -584,4 +604,223 @@ a.btn-table:hover {
 .menu-pagination ul li.active a {
     color: #f39c12;
     text-decoration: none;
+}
+
+
+/* 8.Gallery Area Css  */
+
+.block-area {
+    padding: 75px 0 40px;
+}
+
+.single-gallery,
+.single-team {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    border: 1px solid #2c2626;
+    margin-bottom: 30px;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.gallery-hover {
+    font-size: 16px;
+    text-align: center;
+}
+
+.gallery-hover a {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    background: #f39c12;
+    display: block;
+    padding: 11px 0;
+}
+
+.gallery-hover a:hover {
+    text-decoration: none;
+    background-color: #000000;
+}
+
+.gallery-hover h1 {
+    margin: 0 0 10px;
+    color: #f39c12;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+
+/* 9. Reservation Area CSS */
+
+.reservation-form input,
+.reservation-form textarea,
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 0;
+    background: #F6F6F6;
+    margin-bottom: 30px;
+    color: #2c2626;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 20px 30px;
+}
+
+.reservation-form input:focus,
+.reservation-form textarea:focus,
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 0;
+    background: #F6F6F6;
+}
+
+.reservation-form i {
+    position: absolute;
+    top: 17px;
+    right: 35px;
+    font-size: 25px;
+}
+
+.btn-submit,
+.reservation-form input[type="submit"],
+.contact-form input[type="submit"] {
+    color: #2C2626;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #F6F6F6;
+    border: 2px solid #2C2626;
+    display: inline-block;
+    width: auto;
+    padding: 20px 45px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn-submit:hover,
+.reservation-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:hover {
+    background: #2C2626;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* 10.Our Team CSS */
+
+.block-area.gray {
+    background: #f6f6f6;
+}
+
+.single-team {
+    height: 430px;
+}
+
+.team-hover {
+    font-size: 18px;
+    text-align: center;
+}
+
+.team-hover h1 {
+    color: #F39C12;
+    font-size: 55px;
+    margin: 0 0 20px;
+}
+
+.team-hover h2 {
+    color: #fff;
+    margin: 0 0 35px;
+}
+
+.single-team .bookmarks {
+    margin-top: 45px;
+}
+
+.bookmarks ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bookmarks ul li {
+    display: inline-block;
+}
+
+.bookmarks ul li a {
+    background: #F39C12;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border-radius: 100%;
+    margin: 0 8px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    font-size: 15px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.bookmarks ul li a:hover {
+    background: #000;
+}
+
+
+/* 11. Testimonials CSS */
+
+
+/*11. Testimonials area CSS*/
+
+.testimonial {
+    background-color: #ddd;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 125px 0 30px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.testimonial:before {
+    content: "";
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+
+.single-testimonial h1 {
+    font-size: 60px;
+    margin: 0 0 25px;
+    color: #F39C12;
+}
+
+.testimonial-image {
+    width: 165px;
+    height: 165px;
+    border-radius: 100%;
+    margin: 0 auto 30px;
 }
