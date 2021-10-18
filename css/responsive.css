@@ -6,6 +6,13 @@
        .navbar {
            padding: 13px 0;
        }
+       .navbar-brand {
+           padding: 13px 0;
+           font-size: 40px;
+       }
+       #clientsFeedback {
+           height: 485px;
+       }
        /* Carousel  */
        .carousel img {
            height: 485px;
@@ -131,6 +138,9 @@
            font-size: 15px;
            padding: 15px 20px;
            margin-bottom: 20px;
+       }
+       .single-testimonial {
+           padding: 0px !important;
        }
        .reservation-form i {
            top: 14px;

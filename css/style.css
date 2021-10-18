@@ -43,7 +43,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #2c2626;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 25px;
 }
 
@@ -51,6 +51,42 @@ body {
     --foodcafe_black_color: #000000;
     --foodcafe_navbar_text_yellow_color: #F39C12;
     --foodcafe_navbar_text_white_color: rgb(255, 255, 255);
+}
+
+a {
+    color: var(--foodcafe_navbar_text_yellow_color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--foodcafe_navbar_text_yellow_color);
+}
+
+.btn-table,
+a.btn-table {
+    background-color: var(--foodcafe_navbar_text_yellow_color);
+    border: 2px solid #fff;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 18px 50px;
+    display: inline-block;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.btn-table:hover,
+a.btn-table:hover {
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-table:focus,
+a.btn-table:focus {
+    outline: 0;
+    text-decoration: none;
 }
 
 .padding-top-zero {
@@ -153,7 +189,7 @@ body {
 
 .navbar {
     background-color: var(--foodcafe_black_color);
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 .nav-link {
@@ -173,7 +209,7 @@ body {
 .navbar-brand {
     color: white !important;
     font-family: 'Dancing Script', cursive;
-    font-size: 40px !important;
+    font-size: 55px;
 }
 
 .navbar__active {
@@ -187,7 +223,7 @@ body {
 }
 
 .navbar-toggler {
-    color: #F39C12 !important;
+    color: var(--foodcafe_navbar_text_yellow_color) !important;
 }
 
 .navbar .navbar-toggler {
@@ -201,11 +237,12 @@ body {
 .navbar .navbar-toggler:hover,
 .navbar .navbar-toggler:focus {
     background-color: transparent;
-    border-color: #F39C12;
+    border-color: var(--foodcafe_navbar_text_yellow_color);
+    ;
 }
 
 .navbar .navbar-toggler-icon {
-    color: #F39C12 !important;
+    color: var(--foodcafe_navbar_text_yellow_color) !important;
 }
 
 
@@ -266,7 +303,8 @@ body {
 
 .carousel-caption .btn-table,
 a.btn-table {
-    background-color: #F39C12;
+    background-color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     border: 2px solid #fff;
     font-size: 24px;
     color: #fff;
@@ -301,6 +339,13 @@ a.btn-table:hover {
     margin: 0 0 40px;
 }
 
+.section-title h3 {
+    line-height: 45px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+}
+
 .title {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
@@ -312,10 +357,6 @@ a.btn-table:hover {
     width: 170px;
     display: block;
     margin: 30px auto 0;
-}
-
-.block-area {
-    padding: 75px 20px 40px;
 }
 
 
@@ -468,8 +509,10 @@ a.btn-table:hover {
 
 .menu-nav ul li a:hover,
 .menu-nav ul li.active a {
-    color: #f39c12;
-    border-color: #f39c12;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
+    border-color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     text-decoration: none;
 }
 
@@ -559,7 +602,8 @@ a.btn-table:hover {
 }
 
 .menu-item h1 {
-    color: #f39c12;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     font-size: 40px;
     margin: 0 0 20px;
 }
@@ -602,7 +646,8 @@ a.btn-table:hover {
 
 .menu-pagination ul li a:hover,
 .menu-pagination ul li.active a {
-    color: #f39c12;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     text-decoration: none;
 }
 
@@ -649,7 +694,8 @@ a.btn-table:hover {
     margin: auto;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    background: #f39c12;
+    background: var(--foodcafe_navbar_text_yellow_color);
+    ;
     display: block;
     padding: 11px 0;
 }
@@ -661,7 +707,8 @@ a.btn-table:hover {
 
 .gallery-hover h1 {
     margin: 0 0 10px;
-    color: #f39c12;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     font-size: 40px;
     line-height: 60px;
 }
@@ -739,7 +786,8 @@ a.btn-table:hover {
 }
 
 .team-hover h1 {
-    color: #F39C12;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
     font-size: 55px;
     margin: 0 0 20px;
 }
@@ -764,7 +812,8 @@ a.btn-table:hover {
 }
 
 .bookmarks ul li a {
-    background: #F39C12;
+    background: var(--foodcafe_navbar_text_yellow_color);
+    ;
     width: 35px;
     height: 35px;
     color: #fff;
@@ -783,9 +832,6 @@ a.btn-table:hover {
 }
 
 
-/* 11. Testimonials CSS */
-
-
 /*11. Testimonials area CSS*/
 
 .testimonial {
@@ -794,12 +840,15 @@ a.btn-table:hover {
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 125px 0 30px;
     position: relative;
     text-align: center;
     color: #fff;
     font-size: 18px;
     line-height: 25px;
+}
+
+.testimonial {
+    background-image: url(../images/background-2.jpg);
 }
 
 .testimonial:before {
@@ -815,12 +864,226 @@ a.btn-table:hover {
 .single-testimonial h1 {
     font-size: 60px;
     margin: 0 0 25px;
-    color: #F39C12;
+    color: var(--foodcafe_navbar_text_yellow_color);
 }
 
 .testimonial-image {
     width: 165px;
     height: 165px;
     border-radius: 100%;
-    margin: 0 auto 30px;
+    margin: 0 auto 0px;
+}
+
+.single-testimonial {
+    background-color: transparent;
+    padding: 100px;
+}
+
+#clientsFeedback .carousel-item:before {
+    content: "";
+    background: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 12. Location Area CSS */
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.map-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gmap_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 13. Blog CSS */
+
+.single-blog {
+    background: #fff;
+}
+
+.blog-image {
+    height: 250px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center center;
+    background-color: #ddd;
+}
+
+.blog-text {
+    color: #2C2626;
+    padding: 20px;
+}
+
+.blog-text a {
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
+}
+
+.blog-text h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.blog-text h3 a {
+    color: #2C2626;
+}
+
+.blog-text h5 {
+    font-size: 15px;
+    margin: 15px 0 20px;
+    font-weight: 300;
+    color: var(--foodcafe_navbar_text_yellow_color);
+    ;
+}
+
+.blog-text h5 i {
+    margin-right: 10px;
+}
+
+.blog-text h5 strong {
+    margin-right: 15px;
+}
+
+#blog a:hover {
+    text-decoration: underline;
+}
+
+
+/* 13.Contact CSS */
+
+.single-address {
+    font-size: 20px;
+    color: #2C2626;
+    margin-bottom: 40px;
+}
+
+.single-address h1 {
+    font-size: 35px;
+    color: #F39C12;
+    margin: 0 0 30px;
+}
+
+
+/*15. Widget area CSS*/
+
+.widget-area {
+    background: #222222;
+    padding: 50px 0 45px;
+    color: #fff;
+}
+
+.widget .logo {
+    margin: 0 0 30px;
+}
+
+.widget .bookmarks {
+    margin-top: 20px;
+}
+
+.widget .bookmarks ul li a {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.widget h3 {
+    margin: 30px 0;
+}
+
+.widget ul.post,
+.widget ul.address {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widget ul.post li,
+.widget ul.address li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.widget ul.post li a {
+    display: block;
+    color: #fff;
+    padding-left: 15px;
+    position: relative;
+}
+
+.widget ul.post li a:before {
+    content: '\25BA';
+    font-family: "FontAwesome";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.widget ul.address li {
+    padding-left: 20px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.widget ul.address li a {
+    color: #fff;
+}
+
+.widget ul.address li i {
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.widget input[type="email"] {
+    width: 100%;
+    border: 0;
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.widget input[type="submit"] {
+    font-size: 17px;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 8px 35px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-weight: 700;
+    color: white;
+}
+
+.widget input[type="submit"]:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.widget input[type="email"]:focus {
+    outline: 0;
+}
+
+
+/*16. Footer area CSS*/
+
+.footer-area {
+    background: #000000;
+    padding: 40px;
+    color: #fff;
 }

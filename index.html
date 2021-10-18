@@ -21,14 +21,12 @@
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-
     <!-- Animate CSS -->
     <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- Date Picker CSS -->
-    <link rel="stylesheet" href="css/datepicker1.9.0.min.css">
+    <!-- <link rel="stylesheet" href="css/datepicker1.9.0.min.css"> -->
+
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -51,9 +49,9 @@
 
     <!-- Navbar Starts-->
     <section>
-        <navbar class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <navbar class="navbar navbar-expand-lg navbar-default navbar-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="#">
                    FoodCafe
               </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,7 +61,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <hr class="text-white">
                         <li class="nav-item active">
-                            <a class="nav-link navbar__active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link navbar__active" href="#carouselExampleCaptions">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
@@ -72,7 +70,7 @@
                             <a class="nav-link" href="#menu">Menu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#menu">Gallery</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#reservation">Reservation</a>
@@ -97,7 +95,7 @@
     <!-- Navbar Ends -->
 
     <!-- Carousel Starts  -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,162 +103,164 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/pizza-346985_1920.jpg" class="d-block w-100" alt="...">
+                <img src="./images/pizza-346985_1920.jpg" class="d-block w-100" alt="FoodCafe">
                 <div class="carousel-caption  d-md-block">
-                    <h2 class="wow animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
-                    <h1 class="wow animate__fadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
-                    <a class="btn-table scroll wow animate__fadeInDown" href="#reservation" style="opacity: 1;">Reservation</a>
+                    <h2 class=" animate__animated animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
+                    <h1 class=" animate__animated animate__fadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
+                    <a class="btn-table scroll  animate__animated animate__fadeInDown" href="#reservation" style="opacity: 1;">Reservation</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/slider-2.jpg" class="d-block w-100" alt="...">
+                <img src="./images/slider-2.jpg" class="d-block w-100" alt="FoodCafe">
                 <div class="carousel-caption  d-md-block">
-                    <h2 class="wow animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
-                    <h1 class="wow animate__fadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
-                    <a class="btn-table scroll wow animate__fadeInDown" href="#special" style="opacity: 1;">Special Dishes</a>
+                    <h2 class=" animate__animated animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
+                    <h1 class="animate__animated animate__fadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
+                    <a class="btn-table scroll animate__animated animate__fadeInDown" href="#special" style="opacity: 1;">Special Dishes</a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/slider-3.jpg" class="d-block w-100" alt="...">
+                <img src="./images/slider-3.jpg" class="d-block w-100" alt="FoodCafe">
                 <div class="carousel-caption d-md-block">
-                    <h2 class="wow animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
-                    <h1 class="wow animate__animated animate__fadeInUpfadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
-                    <a class="btn-table scroll wow animate__fadeInDown" href="#special" style="opacity: 1;">Our Menu</a>
+                    <h2 class=" animate__animated animate__fadeInUp" style="opacity: 1;">WELCOME TO FOODCAFE</h2>
+                    <h1 class=" animate__animated  animate__fadeInUp" style="opacity: 1;">A TASTE OF GOOD COMPANY</h1>
+                    <a class="btn-table scroll  animate__animated animate__fadeInDown" href="#special" style="opacity: 1;">Our Menu</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Carousel Ends -->
 
+
     <!-- About Starts -->
-    <section id="about" class="block-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
-                <div class="col-md-10 col-sm-12 col-lg-10 col-xl-10">
-                    <div class="section-title wow animate__animated animate__fadeInUp " style="visibility: visible; animation-name: animated animate__fadeInUp">
-                        <h1 class="title">About Us</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam mauris ex, tempus eget sapien vel, porttitor consequat nulla.
-                        <span class="border"></span>
-                    </div>
-                </div>
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
-            </div>
-        </div>
-    </section>
-    <!-- About Ends -->
-
-    <!-- Special Food Sections Starts -->
-    <section id="special" class="block-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu text-center wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
-                        <div class="special-box">
-                            <h1 class="title">Special Dishes</h1>
+    <section id="about">
+        <div class="block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                    <div class="col-md-10 col-sm-12 col-lg-10 col-xl-10">
+                        <div class="section-title wow animate__animated animate__fadeInUp " style="visibility: visible; animation-name: animated animate__fadeInUp">
+                            <h1 class="title">About Us</h1>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                            egestas.
+                            egestas. Etiam mauris ex, tempus eget sapien vel, porttitor consequat nulla.
+                            <span class="border"></span>
                         </div>
                     </div>
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-1.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
-                        <div class="special-menu-box-hover text-center">
+            </div>
+        </div>
+        <!-- About Ends -->
+
+        <!-- Special Food Sections Starts -->
+        <div class="block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu text-center wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
                             <div class="special-box">
-                                <h1 class="title">Homemade Burger</h1>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                <span class="price">$8</span>
+                                <h1 class="title">Special Dishes</h1>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                                egestas.
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-2.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
-                        <div class="special-menu-box-hover text-center">
-                            <div class="special-box">
-                                <h1 class="title">Pastries</h1>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                <span class="price">$16</span>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-1.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                            <div class="special-menu-box-hover text-center">
+                                <div class="special-box">
+                                    <h1 class="title">Homemade Burger</h1>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                    <span class="price">$8</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-3.jpg&quot;); visibility: visible; animation-name: animate__animated animate__animated animate__fadeInUp;">
-                        <div class="special-menu-box-hover text-center">
-                            <div class="special-box">
-                                <h1 class="title">Pancakes</h1>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                <span class="price">$20</span>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-2.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                            <div class="special-menu-box-hover text-center">
+                                <div class="special-box">
+                                    <h1 class="title">Pastries</h1>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                    <span class="price">$16</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-4.jpg&quot;); visibility: visible; animation-name: wow animate__fadeInUp;">
-                        <div class="special-menu-box-hover text-center">
-                            <div class="special-box">
-                                <h1 class="title">Ciabatts</h1>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                <span class="price">$25</span>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-3.jpg&quot;); visibility: visible; animation-name: animate__animated animate__animated animate__fadeInUp;">
+                            <div class="special-menu-box-hover text-center">
+                                <div class="special-box">
+                                    <h1 class="title">Pancakes</h1>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                    <span class="price">$20</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-5.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
-                        <div class="special-menu-box-hover text-center">
-                            <div class="special-box">
-                                <h1 class="title">Pastries</h1>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
-                                <span class="price">$8</span>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-4.jpg&quot;); visibility: visible; animation-name: wow animate__fadeInUp;">
+                            <div class="special-menu-box-hover text-center">
+                                <div class="special-box">
+                                    <h1 class="title">Ciabatts</h1>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                    <span class="price">$25</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="special-menu-box wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/special-menu/special-menu-5.jpg&quot;); visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                            <div class="special-menu-box-hover text-center">
+                                <div class="special-box">
+                                    <h1 class="title">Pastries</h1>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
+                                    <span class="price">$8</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Special Food Sections Ends -->
+        <!-- Special Food Sections Ends -->
 
 
-    <!-- Opening House Section Starts -->
-    <section id="about" class="block-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
-                <div class="col-md-10 col-sm-12 col-lg-10 col-xl-10">
-                    <div class="section-title wow animate__fadeInUp " style="visibility: visible; animation-name: animate__fadeInUp">
-                        <h1 class="title">Opening Hours</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam mauris ex, tempus eget sapien vel, porttitor consequat nulla.
-                        <span class="border"></span>
+        <!-- Opening House Section Starts -->
+        <div class="block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                    <div class="col-md-10 col-sm-12 col-lg-10 col-xl-10">
+                        <div class="section-title animate__animated animate__fadeInUp " style="visibility: visible; animation-name: animate__animated animate__fadeInUp">
+                            <h1 class="title">Opening Hours</h1>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Etiam mauris ex, tempus eget sapien vel, porttitor consequat nulla.
+                            <span class="border"></span>
+                        </div>
                     </div>
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
                 </div>
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+            </div>
+        </div>
+
+        <div class="opening-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                    <div class="col-md-10 col-sm-12">
+                        <div class="opening-box-text animate__animated animate__fadeInUp text-white" style="visibility: visible; animation-name: animate__animated animate__fadeInUp">
+                            <h2>Opening Hours 8:00AM - 10:00PM</h2>
+                            <h2>Monday - Sunday</h2>
+                            <h2>Call: +00 12345 67890</h2>
+                            <h2>Email: info@yourdomain.com</h2>
+                            Lorem ipsuet bu lum orci eget, viverra elit ellus ac sodales felis tiam non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis.
+                        </div>
+                    </div>
+                    <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                </div>
             </div>
         </div>
     </section>
-
-    <section class="opening-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
-                <div class="col-md-10 col-sm-12">
-                    <div class="opening-box-text animate__animated animate__fadeInUp text-white" style="visibility: visible; animation-name: animate__animated animate__fadeInUp">
-                        <h2>Opening Hours 8:00AM - 10:00PM</h2>
-                        <h2>Monday - Sunday</h2>
-                        <h2>Call: +00 12345 67890</h2>
-                        <h2>Email: info@yourdomain.com</h2>
-                        Lorem ipsuet bu lum orci eget, viverra elit ellus ac sodales felis tiam non metus ali quam eros eget liquam erat volutpat phasellus ac sodales felis.
-                    </div>
-                </div>
-                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Menu Section Starts Here -->
     <section id="menu" class="block-area">
@@ -279,10 +279,10 @@
             </div>
         </div>
     </section>
-    <!-- Opening House Section Ends -->
+    <!-- Menu Description Ends -->
 
-    <!-- Menu Section Starts -->
-    <section id="menu" class="container">
+    <!-- Menu image Section Starts -->
+    <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-2">
                 <div class="menu-nav title wow animate__animated animate__fadeInLeft" style="visibility: visible; animation-name: animate__animated animate__fadeInLeft;">
@@ -297,7 +297,7 @@
 
             <div class="col-md-9 col-md-offset-1 col-sm-9">
 
-                <div class="tab-content menu-list wow animate__fadeInRight" data-wow-duration="2s" style="visibility: visible; animation-name: animate__animated animate__fadeInRight;">
+                <div class="tab-content menu-list animate__animated animate__fadeInRight" style="visibility: visible; animation-name: animate__animated animate__fadeInRight;">
 
                     <div id="breakfast" class="single-menu-list tab-pane  animate__animated animate__fadeIn active in">
                         <div class="row">
@@ -469,7 +469,7 @@
                     </div>
 
 
-                    <div id="main-dish" class="single-menu-list tab-pane ">
+                    <div id="main-dish" class="single-menu-list tab-pane animate__animated animate__fadeIn">
                         <div class="row">
                             <div class="col-md-6 col-sm-6">
                                 <div class="menu-item">
@@ -527,12 +527,13 @@
                 </div>
             </div>
         </div>
+    </div>
     </section>
     <!-- Menu Sections Ends -->
 
 
     <!-- Gallery Sections Starts -->
-    <div id="gallery" class="block-area gray">
+    <section id="gallery" class="block-area gray">
         <div class="container">
             <div class="row">
                 <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
@@ -637,11 +638,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Reservation Section Starts Here -->
 
-    <div id="reservation" class="block-area">
+    <section id="reservation" class="block-area">
         <div class="container">
             <div class="row">
                 <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
@@ -698,11 +699,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Gallery Section Ends -->
 
     <!-- Our Team Section Starts -->
-    <div id="team" class="block-area gray">
+    <section id="team" class="block-area gray">
         <div class="container">
             <div class="row">
                 <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
@@ -776,7 +777,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Our Team Section Ends -->
 
     <!-- Testimonials section starts -->
@@ -797,107 +798,275 @@
     <!-- Testimonial Section Ends -->
 
     <!-- Clients Feedback Section Starts  -->
-    <div class="block-area padding-bottom-zero">
+    <section id="clientsFeedback" class="carousel slide testimonial" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#clientsFeedback" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                    <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                        <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ;">
+                            <div class="testimonial-image" style="background-image: url('images/author/author-1.jpg');">
+                            </div>
+                            <h1 class="title">Jhon Doe</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac vehicula tortor, vitae lacinia nisi. Mauris ac urna in dolor mollis tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                    <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                        <div class="single-testimonial animate__animated" style="visibility: visible; animation-name: animate__animated ">
+                            <div class="testimonial-image" style="background-image: url('images/author/author-1.jpg');">
+                            </div>
+                            <h1 class="title">Jhon Doe</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac vehicula tortor, vitae lacinia nisi. Mauris ac urna in dolor mollis tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                    <div class="col-md-8 col-sm-8 col-lg-8 col-xl-8 col-lg-8">
+                        <div class="single-testimonial  animate__animated " style="visibility: visible; animation-name: animate__animated ">
+                            <div class="testimonial-image" style="background-image: url('images/author/author-1.jpg');">
+                            </div>
+                            <h1 class="title">Jhon Doe</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac vehicula tortor, vitae lacinia nisi. Mauris ac urna in dolor mollis tincidunt.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-lg-2"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Clients Feedback Sections Ends -->
+
+
+    <!-- Location Section Starts -->
+    <section id="location" class="block-area padding-bottom-zero">
         <div class="container">
             <div class="row">
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
                 <div class="col-md-10 col-md-offset-1 col-sm-12">
-                    <div class="section-title wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                        <h1 class="title">Testimonial</h1>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-                        egestas. Etiam mauris ex, tempus eget sapien vel, porttitor consequat nulla.
+                    <div class="section-title wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                        <h1 class="title">Location</h1>
+                        <h3>Address : 329 Queensberry Street, North Melbourne 3051, Australia.</h3>
+                        <h3>Telephone : +00 123 456 789</h3>
+                        <h3>Toll Free : +00 123 456 789</h3>
+                        <h3>Email : reservation@yourdomain.com</h3>
                         <span class="border"></span>
+                    </div>
+                </div>
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="map-container">
+                    <div id="map" class="map-wrap">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="testimonial">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="testimonial-list wow fadeInUp owl-carousel owl-theme owl-loaded" style="visibility: visible; animation-name: fadeInUp;">
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage" style="transform: translate3d(-2250px, 0px, 0px); transition: all 0.25s ease 0s; width: 5250px;">
-                                    <div class="owl-item cloned" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusantium minima ipsa iste mollitia hic quas temporibus earum, adipisci molestias, unde esse, quasi, reiciendis. Veritatis voluptates error,
-                                                magnam rem nam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, quos, obcaecati. Ullam alias deleniti voluptates labore culpa, cum harum doloribus nesciunt quia fugiat incidunt magni amet qui, maiores
-                                                exercitationem tempora excepturi odit est. Quod rerum, sed placeat qui, tenetur animi?</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac vehicula tortor, vitae lacinia nisi. Mauris ac urna in dolor mollis tincidunt.</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusantium minima ipsa iste mollitia hic quas temporibus earum, adipisci molestias, unde esse, quasi, reiciendis. Veritatis voluptates error,
-                                                magnam rem nam.</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, quos, obcaecati. Ullam alias deleniti voluptates labore culpa, cum harum doloribus nesciunt quia fugiat incidunt magni amet qui, maiores
-                                                exercitationem tempora excepturi odit est. Quod rerum, sed placeat qui, tenetur animi?</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac vehicula tortor, vitae lacinia nisi. Mauris ac urna in dolor mollis tincidunt.</p>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 750px; margin-right: 0px;">
-                                        <div class="single-testimonial">
-                                            <div class="testimonial-image" style="background-image: url('assets/img/testimonial/author-1.jpg');">
-                                            </div>
-                                            <h1 class="title">Jhon Doe</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusantium minima ipsa iste mollitia hic quas temporibus earum, adipisci molestias, unde esse, quasi, reiciendis. Veritatis voluptates error,
-                                                magnam rem nam.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="owl-controls">
-                                <div class="owl-nav">
-                                    <div class="owl-prev" style="display: none;">prev</div>
-                                    <div class="owl-next" style="display: none;">next</div>
-                                </div>
-                                <div class="owl-dots" style="">
-                                    <div class="owl-dot"><span></span></div>
-                                    <div class="owl-dot active"><span></span></div>
-                                    <div class="owl-dot"><span></span></div>
-                                </div>
-                            </div>
+    </section>
+    <!-- Location Section Ends -->
+
+    <!-- Blog Area Starts  -->
+    <section id="blog" class="block-area gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                <div class="col-md-10 col-md-offset-1 col-sm-12">
+                    <div class="section-title wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                        <h1 class="title">Blog</h1>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est.
+                        <span class="border"></span>
+                    </div>
+                </div>
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-blog wow animate__animated  animate__fadeInLeft" style="visibility: visible; animation-name: animate__animated animate__fadeInLeft;">
+                        <div class="blog-image" style="background-image: url('images/blog/blog-1.jpg');"></div>
+                        <div class="blog-text">
+                            <h3><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></h3>
+                            <h5><i class="fas fa-calendar-check"></i><strong>Posted on:</strong> 26 March, 2017</h5>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi a ex porttitor, vel viverra quam molestie. In fringilla pellentesque nunc, vulputate interdum nulla dapibus id. Integer id bibendum tortor. Suspendisse vel diam mattis, placerat
+                            mi vitae, efficitur erat <a href="#">read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-blog wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name: animate__animated animate__fadeInUp;">
+                        <div class="blog-image" style="background-image: url('images/blog/blog-2.jpg');"></div>
+                        <div class="blog-text">
+                            <h3><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></h3>
+                            <h5><i class="fas fa-calendar-check"></i><strong>Posted on:</strong> 26 March, 2017</h5>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi a ex porttitor, vel viverra quam molestie. In fringilla pellentesque nunc, vulputate interdum nulla dapibus id. Integer id bibendum tortor. Suspendisse vel diam mattis, placerat
+                            mi vitae, efficitur erat <a href="#">read more...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="single-blog wow animate__animated animate__fadeInRight" style="visibility: visible; animation-name: animate__animated animate__fadeInRight;">
+                        <div class="blog-image" style="background-image: url('images/blog/blog-3.jpg');"></div>
+                        <div class="blog-text">
+                            <h3><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></h3>
+                            <h5><i class="fas fa-calendar-check"></i><strong>Posted on:</strong> 26 March, 2017</h5>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis nisi a ex porttitor, vel viverra quam molestie. In fringilla pellentesque nunc, vulputate interdum nulla dapibus id. Integer id bibendum tortor. Suspendisse vel diam mattis, placerat
+                            mi vitae, efficitur erat <a href="#">read more...</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Clients Feedback Sections Ends -->
+    </section>
+    <!-- Blog Area Ends -->
+
+    <!-- Contact Area Starts  -->
+    <section id="contact" class="block-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                <div class="col-md-10 col-md-offset-1 col-sm-12">
+                    <div class="section-title wow animate__animated animate__fadeInUp" style="visibility: visible; animation-name:  animate__animated animate__fadeInUp;">
+                        <h1 class="title">Contact Us</h1>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut dolor pellentesque, commodo massa at, facilisis quam. Praesent eget massa dui. Nullam a euismod est.
+                        <span class="border"></span>
+                    </div>
+                </div>
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+                <div class="col-md-7 col-sm-7 col-md-pull-4 col-sm-pull-4">
+                    <div class="contact-form wow animate__animated animate__fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                        <form action="index.html" method="POST">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" placeholder="Name" name="c_name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="email" placeholder="Email" name="c_email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <input type="text" placeholder="Subject" name="c_subject">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <textarea cols="30" rows="5" placeholder="Message" name="c_message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 text-end">
+                                    <input class="btn-submit" type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-md-push-8 col-sm-push-8">
+                    <div class="single-address wow animate__animated animate__fadeInRight" style="visibility: visible; animation-name: animate__animated animate__fadeInRight;">
+                        <h1>Address</h1>
+                        329 Queensberry Street, <br>North Melbourne 3051, Australia.
+                    </div>
+                    <div class="single-address wow animate__animated animate__fadeInRight" style="visibility: visible; animation-name:animate__animated animate__fadeInRight;">
+                        <h1>Opening Hours</h1>
+                        8.00 AM to 10.00 PM
+                    </div>
+                    <div class="single-address wow fadeInRight" style="visibility: visible; animation-name:animate__animated animate__fadeInRight;">
+                        <h1>Phone</h1>
+                        +00 123456789 <br>+00 123456789
+                    </div>
+                </div>
+                <div class="col-lx-1 col-xl-1 col-md-1 col-sm-12"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Area Ends  -->
+
+    <!-- Footer Section Starts -->
+    <footer class="site-footer">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h1 class="title logo">Food Cafe</h1>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                            ea douat.
+                            <div class="bookmarks">
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>RECENT POSTS</h3>
+                            <ul class="post">
+                                <li><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></li>
+                                <li><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></li>
+                                <li><a href="#">Crafty Cook and Decorate all of our food dishes with love</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>CONTACT INFO</h3>
+                            <ul class="address">
+                                <li><i class="fas fa-map-marker"></i>329 Queensberry Street, North Melbourne 3051, Australia.</li>
+                                <li><i class="fas fa-phone"></i>+00 123 456 789</li>
+                                <li><i class="fas fa-envelope"></i><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></li>
+                                <li><i class="fas fa-globe"></i><a href="http://www.yourdomain.com">www.yourdomain.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="widget">
+                            <h3>SUBSCRIBE</h3>
+                            <form action="index.html">
+                                <input type="email">
+                                <input class="btn-submit-white" type="submit" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        © 2017 Copyright FoodCafe Restaurant - by <a href="#">tCoderBD</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+
 
 
 
@@ -909,13 +1078,7 @@
     <!-- WOW JS -->
     <script src="js/wow.min.js"></script>
     <script>
-        wow = new WOW({
-            boxClass: 'wow', // default
-            animateClass: 'animated', // default
-            offset: 0, // default
-            mobile: true, // default
-            live: true // default
-        })
+        wow = new WOW({})
         wow.init();
     </script>
 
@@ -923,8 +1086,16 @@
     <script src="js/scripts.js"></script>
 
     <!-- Datepicker JS -->
-    <script src="js/bootstrap-datepicker1.9.0.js"></script>
+    <!-- <script src="js/bootstrap-datepicker1.9.0.js"></script> -->
 
+    <!-- Google Api Key -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAURilREaOo7as_dIxNMu1BNhYAa4ZRsFc&callback=initMap&libraries=&v=weekly" async></script>
+
+    <!-- Google Maps JS -->
+    <script src="js/map.scripts.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </body>
 

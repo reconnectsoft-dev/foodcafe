@@ -1,3 +1,4 @@
+// Change Color on Click
 var selector, elems, makeActive;
 
 selector = '.navbar li a';
@@ -14,20 +15,56 @@ makeActive = function() {
 for (var i = 0; i < elems.length; i++)
     elems[i].addEventListener('mousedown', makeActive);
 
-// let scrollpos = window.scrollY
-// const header = document.querySelector("navbar")
-// const header_height = header.offsetHeight
+//  Add class on Scroll
 
-// const add_class_on_scroll = () => header.classList.add("navbar__active")
-// const remove_class_on_scroll = () => header.classList.remove("navbar__active")
+var sections = document.querySelectorAll("section");
 
-// window.addEventListener('scroll', function() {
-//     scrollpos = window.scrollY;
+onscroll = function() {
+    var scrollPosition = document.documentElement.scrollTop;
 
-//     if (scrollpos >= header_height) { add_class_on_scroll() } else { remove_class_on_scroll() }
+    sections.forEach((section) => {
+        if (
+            scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
+            scrollPosition <
+            section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
+        ) {
+            var currentId = section.attributes.id.value;
+            removeAllActiveClasses();
+            addActiveClass(currentId);
+        }
+    });
+};
 
-//     console.log(scrollpos)
-// })
+var removeAllActiveClasses = function() {
+    document.querySelectorAll("navbar li a").forEach((el) => {
+        el.classList.remove("navbar__active");
+    });
+};
+
+var addActiveClass = function(id) {
+    // console.log(id);
+    var selector = `navbar li a[href="#${id}"]`;
+    document.querySelector(selector).classList.add("navbar__active");
+};
+
+var navLinks = document.querySelectorAll("navbar li a");
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        var currentId = e.target.attributes.href.value;
+        var section = document.querySelector(currentId);
+        var sectionPos = section.offsetTop;
+        // section.scrollIntoView({
+        //   behavior: "smooth",
+        // });
+
+        window.scroll({
+            top: sectionPos,
+            behavior: "smooth",
+        });
+    });
+});
 
 
 // Menu Sections Js
