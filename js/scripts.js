@@ -117,3 +117,8 @@ function main_dish() {
     document.getElementById("dinner_link").classList.remove('active');
     document.getElementById("main-dish_link").classList.add('active');
 }
+
+// Loading Preloader
+function onload_function() {
+    document.getElementById('preloader_foodcafe').style.display = "none";
+}
