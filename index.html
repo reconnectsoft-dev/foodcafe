@@ -25,8 +25,10 @@
     <link rel="stylesheet" href="css/animate.min.css">
 
     <!-- Date Picker CSS -->
-    <!-- <link rel="stylesheet" href="css/datepicker1.9.0.min.css"> -->
+    <link rel="stylesheet" href="css/datepicker1.9.0.min.css">
 
+    <!-- Jquery for DatePicker -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -35,6 +37,7 @@
 </head>
 
 <body onload="onload_function()">
+
     <!-- Loader Starts  -->
     <div class="foodcafe-preloader" id="preloader_foodcafe">
         <div class="spinner">
@@ -93,6 +96,7 @@
         </navbar>
     </section>
     <!-- Navbar Ends -->
+
 
     <!-- Carousel Starts  -->
     <section id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
@@ -676,9 +680,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
-                                    <input id="datepicker" type="text" placeholder="Date" name="r_date">
-                                    <i class="fas fa-calendar-alt"></i>
+                                <div class="col-md-6 col-sm-6 date">
+                                    <input type="text" placeholder="Date" id="datepicker-13"><i class="fas fa-calendar-alt"></i>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <input type="tel" placeholder="Gust Number" name="r_g_number">
@@ -981,6 +984,7 @@
                         </form>
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-4 col-md-push-8 col-sm-push-8">
                     <div class="single-address wow animate__animated animate__fadeInRight" style="visibility: visible; animation-name: animate__animated animate__fadeInRight;">
                         <h1>Address</h1>
@@ -1068,15 +1072,12 @@
     <!-- Footer Section Ends -->
 
 
-
-
-
-
     <!-- Bootstrap JS-->
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <!-- WOW JS -->
     <script src="js/wow.min.js"></script>
+
     <script>
         wow = new WOW({})
         wow.init();
@@ -1086,16 +1087,13 @@
     <script src="js/scripts.js"></script>
 
     <!-- Datepicker JS -->
-    <!-- <script src="js/bootstrap-datepicker1.9.0.js"></script> -->
+    <script src="js/bootstrap-datepicker1.9.0.js"></script>
 
     <!-- Google Api Key -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAURilREaOo7as_dIxNMu1BNhYAa4ZRsFc&callback=initMap&libraries=&v=weekly" async></script>
 
     <!-- Google Maps JS -->
     <script src="js/map.scripts.js"></script>
-
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </body>
 

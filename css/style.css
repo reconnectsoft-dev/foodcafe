@@ -39,6 +39,10 @@ This files contents are outlined below
 /*0. Default CSS*/
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -767,6 +771,16 @@ a.btn-table:hover {
     background: #2C2626;
     text-decoration: none;
     color: #fff;
+}
+
+.date {
+    display: inline-block;
+    position: relative
+}
+
+.date:after {
+    position: absolute;
+    right: 6px;
 }
 
 
