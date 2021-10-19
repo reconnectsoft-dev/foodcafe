@@ -27,8 +27,11 @@
     <!-- Date Picker CSS -->
     <link rel="stylesheet" href="css/datepicker1.9.0.min.css">
 
+    <!-- Magnific Pop-up CSS -->
+    <link rel="stylesheet" href="css/magnific-pop-up.css">
+
     <!-- Jquery for DatePicker -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/jquery-1.10.2.js"></script>
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -556,7 +559,7 @@
                     <div class="single-gallery wow animate__animated animate__fadeInUp" style="background-image: url(&quot;images/gallery/gallery-1.jpg&quot;); visibility: visible; animation-name:animate__animated animate__fadeInUp;">
                         <div class="gallery-hover">
                             <div class="special-box">
-                                <a class="gallery-lightbox" href="images/gallery/gallery-1.jpg"><i class="fa fa-search"></i></a>
+                                <a class="gallery-lightbox" href="images/gallery/gallery-1.jpg" height="560px"><i class="fa fa-search"></i></a>
                                 <h1 class="title">Pancakes</h1>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.
                             </div>
@@ -1094,6 +1097,19 @@
 
     <!-- Google Maps JS -->
     <script src="js/map.scripts.js"></script>
+
+    <!-- Magnific Pop up JS -->
+    <script src="js/magnific.pop-up.min.js"></script>
+
+    <script>
+        // Gallery 
+        $(".gallery-lightbox").magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
 
 </body>
 
